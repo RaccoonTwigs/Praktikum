@@ -1,0 +1,35 @@
+<!doctype html>
+<title> Spielebereich </title>
+
+{% if error %}
+<h1> Fehler! {{error}} !</h1>
+{% endif %}
+
+<form action="/hello" method="post">
+    <div>
+        <!--<label for="firstNumber">Starterbereich</label><br>
+        <input type="text" id="firstNumber" name="firstNumber" value="1">
+        <label for="secondNumber">Endbereich</label><br>
+        <input type="text" id="secondNumber" name="secondNumber" value="100" >
+        <label for="guessmyNumber">Endbereich</label><br>
+        //-->
+        <input type="text" id="guessMyNumber" name="guessMyNumber" value="0" >
+        <!-- <input type="submit" value="Bestätigung">
+        <input type="reset" value="Zurücksetzen">
+        -->
+    </div>
+    <p></p>
+    <div>
+        <!--<label> {{ firstNumberChanged|default("1")}}</label>
+        <label> {{ secondNumberChanged|default("100")}}</label>
+        -->
+        <p></p>
+        <label for="startGame">Starte das Spiel</label> <br>
+        <p></p>
+        <button name="startGame" type="submit" value="True">Start</button>
+        <p></p>
+    </div>
+    <span><strong>Deine Nummer war: {{rolled}}</strong></span>
+    <p></p>
+    <span><strong>Ich habe {{ manysteps }} Versuche gebraucht</strong></span>
+</form>

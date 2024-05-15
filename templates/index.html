@@ -1,0 +1,30 @@
+<!doctype html>
+<title> Startseite </title>
+
+{% if info %}
+<h3>{{info}}</h3>
+{% endif %}
+
+{% if loggedin %}
+{% else %}
+<a href="/login">Login</a>
+{% endif %}
+
+{% if loggedin %}
+<form action="/hello">
+    <label> Der Computer errät deine Zahl</label>
+    <button type="submit">Zum Spiel</button>
+</form>
+
+<form action="/game2">
+    <label> Du musst die Zahl raten</label>
+    <button type="submit">Zum Spiel</button>
+</form>
+
+<form action="/logout">
+
+    <button type="submit">Logout</button>
+
+</form>
+
+{% endif %}

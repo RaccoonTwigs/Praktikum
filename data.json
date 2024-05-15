@@ -1,0 +1,10 @@
+{
+    "admin": {
+        "latestGuess": 0,
+        "firstGuess": 0
+    },
+    "test": {
+        "latestGuess": 0,
+        "firstGuess": 0
+    }
+}

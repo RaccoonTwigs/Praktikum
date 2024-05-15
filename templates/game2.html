@@ -1,0 +1,20 @@
+<!doctype html>
+<title> Spiel 2 </title>
+
+{% if error %}
+<h1> Fehler! {{error}} !</h1>
+{% endif %}
+
+<from action="game2", method="post">
+    <input type="text", name="userGuess", id="userGuess"></input>
+    <input type="submit", name="submit"></input>
+</from>
+
+<p></p>
+
+<form action="game2", method="post">
+
+    <button type="sumbit" name="startGame", id="startGame"> Starte Spiel</button>
+
+</form>
+
