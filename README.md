@@ -12,3 +12,5 @@ Put the program onto a flask instance and host it on a local website and connect
 Unfinished Tasks:
 The optional tasks required a whole rewrite of the application and multiple complex usage of instance-based webdesign(Session, Login)
 Currently missing, rewrite of the first task logic.
+
+Building requires to install python3 + virtual instance of flask
